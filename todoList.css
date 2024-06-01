@@ -1,8 +1,27 @@
-body{
-    background-color: rgb(255, 180, 240);
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    background-color: antiquewhite;
+    padding: auto;
     
 }
-h1{
-    color: blueviolet;
+
+.container{
+    background-color: aliceblue;
+    padding: 50px;
+    align-items: center;
+    margin: 20%;
+    border-radius: 20px;
+
+}
+.container,h1{
+    background-color: aliceblue;
+    color: black;
+}
+
+form,input{
+    background-color: aliceblue;
+    width: 100%;
+}
+form,button{
+    background-color: aliceblue;
+    width: 50%;
 }
