@@ -1,27 +1,58 @@
 *{
-    background-color: antiquewhite;
-    padding: auto;
+    background: linear-gradient(135deg,#153677, #085f39);
+}
+body{
     
 }
 
-.container{
-    background-color: aliceblue;
+
+.containerTodo{
+    background: wheat;
     padding: 50px;
     align-items: center;
-    margin: 20%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 0%;
     border-radius: 20px;
-
+    width: 50%;
 }
-.container,h1{
-    background-color: aliceblue;
+
+.containerTodo h1{
+    background: wheat;
     color: black;
+    text-shadow: 1px 1.5px 1px rgb(65, 254, 147);
 }
 
-form,input{
-    background-color: aliceblue;
-    width: 100%;
+form input{
+    background: rgb(253, 246, 235);
+    width: 50%;
 }
 form,button{
-    background-color: aliceblue;
+    background: wheat;
+    color: aliceblue ;
+}
+
+button{
+    background: linear-gradient(135deg,#153677, #085f39);
+    width: 10%;
+    position: relative;
+    display: inline-flex;
+}
+.containerOut{
+    background: wheat;
+    padding: 50px;
+    position: absolute;
+    
+    align-items: left;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    border-radius: 20px;
     width: 50%;
+}
+
+.containerOut h1{
+    background: wheat;
 }
