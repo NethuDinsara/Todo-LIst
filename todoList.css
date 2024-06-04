@@ -1,58 +1,104 @@
 *{
-    background: linear-gradient(135deg,#153677, #085f39);
-}
-body{
-    
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 
-
-.containerTodo{
-    background: wheat;
-    padding: 50px;
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#046550);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #003465;
+    display: flex;
     align-items: center;
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-top: 10%;
-    margin-bottom: 0%;
-    border-radius: 20px;
-    width: 50%;
+    margin-left: 10px;
 }
-
-.containerTodo h1{
-    background: wheat;
-    color: black;
-    text-shadow: 1px 1.5px 1px rgb(65, 254, 147);
-}
-
-form input{
-    background: rgb(253, 246, 235);
-    width: 50%;
-}
-form,button{
-    background: wheat;
-    color: aliceblue ;
-}
-
-button{
-    background: linear-gradient(135deg,#153677, #085f39);
-    width: 10%;
+.todo-app h2 img{
+    width: 24px;
     position: relative;
-    display: inline-flex;
+    top: 8px;
+    margin-left: 10px;
+    margin-bottom: 30px;
 }
-.containerOut{
-    background: wheat;
-    padding: 50px;
-    position: absolute;
-    
-    align-items: left;
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-top: 5%;
-    margin-bottom: 20%;
-    border-radius: 20px;
-    width: 50%;
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    background: hsl(351, 86%, 59%);
 }
 
-.containerOut h1{
-    background: wheat;
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    bottom: 8px;
+    left: 1px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(Images/tick.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: rgb(186, 186, 186);
 }

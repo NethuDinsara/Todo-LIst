@@ -8,29 +8,22 @@
         <!-- <link rel="icon" href=""> -->
     </head>
     <body>
-
-       <div class="mainContainer">
-        <div class="containerTodo">
-            <h1>Todo-List</h1>
-            div.
-                <input type="text" id="todo-input" placeholder="Add a new task" required>
-
-                <div class="row"></div>
-                <button type="submit" id="addButton">Add</button>
-            </form>
-            <ul id="todo-list"></ul>
+        <div class="container">
+            <div class="todo-app">
+                <h2>To-Do List <img src="Images/icon.png" alt="icon"></h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
+            </div>
+            
         </div>
 
-        <div class="containerOut" id="containerOut">
-            <h1 style="background-color: aliceblue;">Tasks</h1>
-        </div>
-
-       </div>
-        
-        
-
-
-        
         <script src="todoList.js"></script>
 
     </body>
