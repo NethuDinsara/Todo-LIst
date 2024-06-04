@@ -21,10 +21,17 @@ function addTask(){
 
 listContainer.addEventListener("click", function(e) {
     if(e.target.tagName === "LI"){
-        e.target.classList.toggle("checked");
+        e.target.classList.toggle("checked"); //Checked mark
     }
     else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
+        e.target.parentElement.remove(); //TO remove a task
     }
 }, false);
 
+//but all these things will be despieres when the browser refreshers or leaves
+//So need to store it in the browser
+
+//Storing in the browser
+function saveData(){
+    localStorage.setItem("data", listContainer.innerHTML);//so whatever detail in listcontainer will be added here
+}
