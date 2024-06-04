@@ -17,14 +17,18 @@ function addTask(){
     }
     inputBox.value=""; //intizialize the value to null again once entered
 
+    saveData();//to save the data everytime addTask function called
+
 }
 
 listContainer.addEventListener("click", function(e) {
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked"); //Checked mark
+        saveData();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove(); //TO remove a task
+        saveData();
     }
 }, false);
 
@@ -35,3 +39,5 @@ listContainer.addEventListener("click", function(e) {
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);//so whatever detail in listcontainer will be added here
 }
+
+
