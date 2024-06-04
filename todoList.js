@@ -40,4 +40,11 @@ function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);//so whatever detail in listcontainer will be added here
 }
 
+//But still its only stored in the browser, yet not displaying when we enters the page
+//so we need to make it to display when enters to the page
+function showTask(){
+    listContainer.innerHTML=localStorage.getItem("data");
+}
+showTask(); //calling it everytime at the end
+
 
