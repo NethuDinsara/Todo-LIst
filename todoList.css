@@ -8,9 +8,12 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#153677,#046550);
+    /* background: linear-gradient(135deg,#153677,#046550); */
+    background-image: url(Images/bg.png);
     padding: 10px;
+    background-size: cover;
 }
+
 .todo-app{
     width: 100%;
     max-width: 540px;
@@ -18,9 +21,10 @@
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
+    box-shadow: 8px 8px 5px #27005D;
 }
 .todo-app h2{
-    color: #003465;
+    color: #27005D;
     display: flex;
     align-items: center;
     margin-left: 10px;
@@ -28,7 +32,7 @@
 .todo-app h2 img{
     width: 24px;
     position: relative;
-    top: 8px;
+    top: 12px;
     margin-left: 10px;
     margin-bottom: 30px;
 }
@@ -53,10 +57,17 @@ button{
     outline: none;
     padding: 16px 50px;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
+    text-shadow: #27005D;
     cursor: pointer;
     border-radius: 40px;
-    background: hsl(351, 86%, 59%);
+    background: linear-gradient(135deg,#6a4ea0,#f17cff,#c273cb);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 3px 3px 8px #27005D;
+}
+
+button:active{
+    transform: translateY(4px);
 }
 
 ul li{
@@ -84,7 +95,7 @@ ul li.checked{
     text-decoration: line-through;
 }
 ul li.checked::before{
-    background-image: url(Images/tick.png);
+    background-image: url(Images/tick1.png);
 }
 
 ul li span{
